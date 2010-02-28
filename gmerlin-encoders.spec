@@ -1,3 +1,10 @@
+%define build_plf 0
+%{?_with_plf: %{expand: %%global build_plf 1}}
+
+%if %build_plf
+%define distsuffix plf
+%endif
+
 Name: gmerlin-encoders
 Summary: A multimedia encoding library
 Version: 0.2.9
@@ -18,6 +25,10 @@ BuildRequires: libshout-devel
 BuildRequires: speex-devel
 BuildRequires: libtheora-devel
 BuildRequires: libvorbis-devel
+%if %build_plf
+BuildRequires: libfaac-devel
+BuildRequires: lame-devel
+%endif
 BuildRequires: gettext
 
 %description
