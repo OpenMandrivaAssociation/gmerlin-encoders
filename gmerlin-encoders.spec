@@ -8,7 +8,7 @@
 Name: gmerlin-encoders
 Summary: A multimedia encoding library
 Version: 1.0.0
-Release: %mkrel 1
+Release: %mkrel 2
 Url: http://gmerlin.sourceforge.net/
 License: LGPLv2+
 Group: Video
