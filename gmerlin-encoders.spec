@@ -16,6 +16,7 @@ License:	LGPLv2+
 Group:		Video
 Url:		http://gmerlin.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/gmerlin/%{name}-%{version}.tar.gz
+Patch0:		gmerlin-encoders-1.2.0-ffmpeg2.patch
 BuildRequires:	gmerlin
 BuildRequires:	ffmpeg-devel
 BuildRequires:	pkgconfig(flac)
@@ -44,10 +45,11 @@ encode more file formats.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure2_5x
-%make
+make
 
 %install
 %makeinstall_std
