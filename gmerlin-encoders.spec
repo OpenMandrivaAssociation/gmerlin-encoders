@@ -16,6 +16,7 @@ License:	LGPLv2+
 Group:		Video
 Url:		http://gmerlin.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/gmerlin/%{name}-%{version}.tar.gz
+BuildRequires:	gmerlin
 BuildRequires:	ffmpeg-devel
 BuildRequires:	pkgconfig(flac)
 BuildRequires:	pkgconfig(gavl)
