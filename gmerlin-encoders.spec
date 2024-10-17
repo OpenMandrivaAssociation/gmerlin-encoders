@@ -14,7 +14,7 @@ Version:	1.2.0
 Release:	1%{?extrarelsuffix}
 License:	LGPLv2+
 Group:		Video
-Url:		http://gmerlin.sourceforge.net/
+Url:		https://gmerlin.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/gmerlin/%{name}-%{version}.tar.gz
 Patch0:		gmerlin-encoders-1.2.0-ffmpeg2.patch
 BuildRequires:	gmerlin
