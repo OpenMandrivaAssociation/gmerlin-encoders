@@ -17,6 +17,11 @@ Group:		Video
 Url:		https://gmerlin.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/gmerlin/%{name}-%{version}.tar.gz
 Patch0:		gmerlin-encoders-1.2.0-ffmpeg2.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gmerlin
 BuildRequires:	ffmpeg-devel
 BuildRequires:	pkgconfig(flac)
